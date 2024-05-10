@@ -220,7 +220,13 @@ section {
  a {
     text-decoration: none;
  }
+@media screen and (max-width :767px){
 
+    section {
+        padding: 60px 20px;
+
+    }
+}
 
 
 
