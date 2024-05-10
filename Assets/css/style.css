@@ -1,0 +1,229 @@
+:root {
+
+    --bg1: #192126ad;
+    --bg2: #rgb (44, 42, 42);
+    --body: rgb(95, 86, 86);
+    --brand: #F2b03b;
+    --white:rgb(39, 35, 35);
+    --p: rgb(161, 150, 150);  
+}
+
+#banner {
+    min-height: 100vh;
+    background: linear-gradient(to right, hsla(0, 0%, 3%, 0.856), rgba(24, 23, 9, 0.315)),
+    url("https://media.timeout.com/images/101846405/image.jpg");
+    background-size: cover;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, hsla(300, 9%, 11%, 0.873), rgba(29, 27, 29, 0.884));
+}
+
+.navbar .nav-link {
+    color: rgb(242, 238, 245);
+}
+
+.navbar #navbarNav .nav-link.active {
+    color: var(--brand) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--brand) !important;
+}
+
+.navbar-brand img {
+    width: 8%;
+
+
+}
+
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: white;
+    border-color: var(--brand);
+}
+
+.btn-outlined-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outlined-brand:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+/*About*/
+#about {
+    background-color: rgb(107, 81, 54);
+    position: relative;
+    z-index: 1;
+}
+
+#about img{
+    width: 70%;
+    height: 50%;
+}
+    #services {
+        background: linear-gradient(to right, hsla(300, 3%, 22%, 0.82) , rgba(80, 82, 75, 0.884));
+     }
+.icon-box-img {
+    width: 40%;
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.card:hover {
+    background-color: var(--bg1);
+
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #ffffff
+}
+
+#cta {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right, hsla(150, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)),
+        url("https://th.bing.com/th/id/R.f564cc8589f68be4690adc7a35f36da0?rik=%2b3PPs5qdMVpHhg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fSunset-wallpaper-desktop.jpg&ehk=9v%2b%2fyX708Qq6bSvK8rs5oqPPFk0wCOBUq%2fCpW6ELKcA%3d&risl=1&pid=ImgRaw&r=0");
+    min-height: 70vh;
+}
+
+.testimonials {
+    padding: 30px;
+    background-color: var(--bg1);
+    border-radius: 1px;
+}
+
+.testimonials img {
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+#reviews {
+    background-color: rgb(107, 81, 54);
+ }
+
+#reviews a {
+    text-decoration: none;
+    color: var(--brand);
+}
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+}
+.accordion-item{
+    margin-bottom: 20px; /*Add margin bottom for spacing*/
+    border-radius: 0 !important;
+}
+
+.accordion-button {
+    background-color: #faf8f9;
+    border: none;
+    border-bottom: 1px solid #cf7b7b;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1b1c1b;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.accordion-body {
+    border-left: 3px solid var(--brand);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #f8f9fa;
+}
+.faq-answer p {
+    margin-bottom: 0;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordiom-button:not(.collapsed) {
+    color: var(--bg1)
+}
+/* Hover effect for FAQ quations */
+.accordion-button:hover{
+    background-color: var(--brand); /* Change background color on hover*/
+    color: var(--bg1);/* Change text color on hover*/
+}
+/*  Adjust accordion icon */
+.accordion-button:hover {
+    font-family:"Font Awesome 5 free";
+    content:"";/* Plus icon*/
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+}
+.accordion-button[aria-expanded="true"]::after {
+    content:""; /* Minus icon*/
+}
+
+/* Footer */
+#footer{
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color: rgb(107, 81, 54);
+}
+#footer ul.list-unstyled li a{
+    color:#e9e2e2;
+}
+#footer ul.list-unstyled li:hover a{
+    color:var(--bg1);
+}
+#reviews h2, #services h2{
+    color: var(--bg1);
+}
+.btn-outlined-light {
+    border-color: #f2b038 !important;
+    color: #f2003b;
+}
+.navbar-brand-footer img {
+    width: 30% !important;
+ }
+ #faq {
+    background: linear-gradient(to right, hsla(300, 3%, 22%, 0.82) , rgba(80, 82, 75, 0.884));
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+
+
+
+
+
+
